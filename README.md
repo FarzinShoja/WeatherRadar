@@ -8,7 +8,7 @@ Simple weather app using HTML, CSS, and JavaScript
     <img
       alt="Parking Master"
       src="resources\images\screenshot.png"
-      <!-- width="400" -->
+       width="950"
     />
   </a>
 </p>
