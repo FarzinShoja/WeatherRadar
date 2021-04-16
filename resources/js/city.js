@@ -1,6 +1,6 @@
 /**
  * City Request
- * Retrive requested information by user then display the result
+ * Retrieve requested information by user then display the result
  */
 
 // Get weather information by the user input (city)
@@ -19,9 +19,9 @@ let weather = {
   },
 
     /**
-   * Retive the right data by the user input & display the result using innerText
-   * access the json file prvided by the api
-   * [0] is to retrive the right information from the array list provided by jason(api) */
+   * Retrieve the right data by the user input & display the result using innerText
+   * access the json file provided by the api
+   * [0] is to retrieve the right information from the array list provided by jason(api) */
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
@@ -53,8 +53,8 @@ let weather = {
 };
 
 /**
- * This is addon that allows the defult Weather to be set on user GPS Coordinate
- * Had to use this spefic api to make this work
+ * This is addon that allows the default Weather to be set on user GPS Coordinate
+ * Had to use this specific api to make this work
  */
 
 let geoCode = {
@@ -119,7 +119,7 @@ let geoCode = {
   },
 };
 
-// This fnction send the user input to the api
+// This function send the user input to the api
 document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });

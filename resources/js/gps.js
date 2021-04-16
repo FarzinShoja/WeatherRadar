@@ -1,6 +1,6 @@
 /**
  * GPS Coordinates Request
- * Retrive requested information by user then display the result
+ * Retrieve requested information by user then display the result
  */
 // Get weather information by the user input (GPS Coordinates)
 let weather = {
@@ -20,9 +20,9 @@ let weather = {
     },
   
     /**
-     * Retive the right data by the user input & display the result using innerText
-     * access the json file prvided by the api
-     * [0] is to retrive the right information from the array list provided by jason(api) */
+     * Retrieve the right data by the user input & display the result using innerText
+     * access the json file provided by the api
+     * [0] is to retrieve the right information from the array list provided by jason(api) */
     displayWeather: function (data) {
       const { name } = data;
       console.log(data);
@@ -51,8 +51,8 @@ let weather = {
         "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
   
-    // Retrives the user input from searchbar
-    // Since the gps coord requires two input we can slpit them by ","
+    // Retrieves the user input from searchbar
+    // Since the gps coordination requires two input we can split them by ","
     search: function () {
       var userInput = document.querySelector(".searchTerm").value;
       var latLong = new Array();
@@ -129,7 +129,7 @@ let weather = {
     },
   };
   
-  // This fnction send the user input to the api
+  // This function send the user input to the api
   document.querySelector(".search button").addEventListener("click", function () {
     weather.search();
   });
